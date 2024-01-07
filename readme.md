@@ -1,1 +1,1 @@
-JavaScript course
+cse121b assignments
