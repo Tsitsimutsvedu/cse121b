@@ -29,10 +29,10 @@ document.querySelector('#subtractNumbers').addEventListener('click' , subtractNu
 const multiply = (a,b) => a*b;
 
 const multiplyNumbers = ()=>{
-    const factor1 = parseFloat (document.getElementById('factor1').value);
-    const factor2 = parseFloat (document.getElementById('factor2').value);
-    const result = multiply(factor1, factor2);
-    document.getElementById('product').innerText = 'result: ${result}';
+const factor1 = parseFloat (document.getElementById('factor1').value);
+const factor2 = parseFloat (document.getElementById('factor2').value);
+const result = multiply(factor1, factor2);
+document.getElementById('product').innerText = 'result: ${result}';
 }
 document.getElementById('multiplyNumbers').addEventListener('click, multiplyNumbers');
 
@@ -41,27 +41,26 @@ const divide = (x , y) => x / y;
 
 const divideNumbers = () => 
 {
-    let dividend = parseFloat(document.getElementById("dividend").value);
-    let divisor = parseFloat(document.getElementById("divisor"). value);
+let dividend = parseFloat(document.getElementById("dividend").value);
+let divisor = parseFloat(document.getElementById("divisor"). value);
 
-    let quotient = divide(dividend, divisor);
-    document.getElementById("quotient").value = quotient;
+let quotient = divide(dividend, divisor);
+document.getElementById("quotient").value = quotient;
 }
 document.getElementById("divideNumbers").addEventListener("click" , divideNumbers);
 
 
 
 /* Decision Structure */
-
 function getTotal (){
-
 let subtotal = parseFloat(document.getElementById("subtotal").value);
 if(document.getElementById("number").checked); {
     subtotal = subtotal - subtotal * 0.2
 }
 document.getElementById("total").textContent = '${subtotal.toFixed(2)}';
-document.getElementById("getTotal").addEventListener("click , getTotal")
 }
+document.getElementById("getTotal").addEventListener("click , getTotal")
+
 /* ARRAY METHODS - Functional Programming */
 let numbersArray = [1,2,3,4,5,6,7,8,9,10,11,12,13];
 console.log(numbersArray);
