@@ -27,8 +27,8 @@ document.querySelector('#subtractNumbers').addEventListener('click' , subtractNu
 let multiply = (a,b) => a*b;
 
     let multiplyNumbers = ()=>{
-        let multiplyNumber1 = Number(document.querySelector('#factor1').value);
-        let multiplyNumber2 = Number(document.querySelector('#factor2').value);
+    let multiplyNumber1 = Number(document.querySelector('#factor1').value);
+    let multiplyNumber2 = Number(document.querySelector('#factor2').value);
 
     document.querySelector('#product').value = multiply(multiplyNumber1, multiplyNumber2);
 }
@@ -36,7 +36,7 @@ document.querySelector('#multiplyNumbers').addEventListener('click, multiplyNumb
 
 /* Open Function Use - Divide Numbers */
 let divide = (a , b) => a / b;
-function divideNumbers(){
+    function divideNumbers(){
     let divideNumber1 = Number(document.querySelector('#dividend').value);
     let divideNumber2 = Number(document.querySelector('#dividend').value);
 
@@ -57,7 +57,7 @@ document.querySelector('#getTotal').addEventListener("click , getTotal")
 /* ARRAY METHODS - Functional Programming */
 /* Output Source Array */
     let numbersArray = [1,2,3,4,5,6,7,8,9,10,11,12,13];
-   document.getElementById('array').textContent = numbersArray;
+    document.getElementById('array').textContent = numbersArray;
 
 /* Output Odds Only Array */
     let oddNumbers = numbersArray.filter(number => number % 2 == 0);
