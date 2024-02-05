@@ -11,7 +11,6 @@ function  addNumbers() {
     document.querySelector('#sum').value = add(addNumber1, addNumber2);
 }
 document.querySelector('#addNumbers').addEventListener ('click' , addNumbers);
-
      
 /* Function Expression - Subtract Numbers */
 function Subtract (number1 , number2){
@@ -23,7 +22,6 @@ function Subtract (number1 , number2){
     document.querySelector('#difference').value = subtract(addNumber1, addNumber2);
 }
 document.querySelector('#subtractNumbers').addEventListener('click' , subtractNumbers);
-
 
  /* Arrow Function - Multiply Numbers */
 let multiply = (a,b) => a*b;
@@ -44,7 +42,6 @@ function divideNumbers(){
 
     document.querySelector('#quotient').value = divide(divideNumber1, divideNumber2);
 }
-
 document.querySelector("divideNumbers").addEventListener("click" , divideNumbers);
 
 /* Decision Structure */
