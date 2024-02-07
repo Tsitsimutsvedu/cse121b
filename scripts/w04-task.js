@@ -1,18 +1,18 @@
 /* LESSON 3 - Programming Tasks */
 
 /* Profile Object  */
-    let myProfile = {};
-    myProfile.fullName = "Tsitsi Mutsvedu",
-    photo = "images/tsitsi.png",
-    favoriteFoods = ["rice", "stew", "eggs", "pap", "chips"],
-    hobbies = ["Reading", "Hiking", "Photography"],
+    let myProfile = {
+    name:  'Tsitsi Mutsvedu',
+    photo: 'images/tsitsi.png',
+    favoriteFoods: ["rice", "stew", "eggs", "pap", "chips"],
+    hobbies: ["Reading", "Hiking", "Photography"],
+    placesLived: []
+    };
 
- /* Populate Profile Object with placesLive objects */
-    myProfile.placesLived = [];
-    myProfile.placesLived.push({ place: "Zimbabwe", length: "30 years" });
-    myProfile.placesLived.push({ place: "South Africa", length: "12 years" });
+    /* Populate Profile Object with placesLive objects */
 // Add more places as needed
-
+    placesLived.push({ place: "Zimbabwe", length: "30 years" });
+    placesLived.push({ place: "South Africa", length: "12 years" });
 
 /* DOM Manipulation - Output */
 /* Name */
