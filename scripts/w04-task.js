@@ -11,8 +11,8 @@
 
     /* Populate Profile Object with placesLive objects */
 // Add more places as needed
-    placesLived.push({ place: "Zimbabwe", length: "30 years" });
-    placesLived.push({ place: "South Africa", length: "12 years" });
+    myProfile.placesLived.push({ place: "Zimbabwe", length: "30 years" });
+    myProfile.placesLived.push({ place: "South Africa", length: "12 years" });
 
 /* DOM Manipulation - Output */
 /* Name */
@@ -20,14 +20,14 @@
 
 /* Photo with attributes */
     document.getElementById("name").textContent = myProfile.name;
-    document.querySelector('#photo').scr = myProfile.photo.src;
-    document.querySelector('#photo').lastChild.myProfile.photo.alt;
+    document.querySelector('#photo').scr = myProfile.photo;
+    document.querySelector('#photo').alt = myProfile.name;
 
 
 /* Favorite Foods List*/
     favoriteFoodsList = document.getElementById("favorite-foods");
-    myProfile.favorite-Foods.forEach((food) => {
-    const li = document.createElement("li");
+    myProfile.favoriteFoods.forEach((food) => {
+    let li = document.createElement("li");
     li.textContent = food;
     favoriteFoodsList.appendChild(li);
      
