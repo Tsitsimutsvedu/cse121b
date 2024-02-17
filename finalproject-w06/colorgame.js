@@ -88,7 +88,7 @@ function choosenColor() {
     var random = Math.floor(Math.random() * colors.length);
     return colors[random];
 }
- 
+
 function genRandomColors(num){
     var arr = []; 
     for (var i = 0; i < num; i++ ){
