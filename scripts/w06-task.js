@@ -30,7 +30,7 @@ const displayProphets = (prophets) => {
 /* async getProphets Function using fetch()*/
 const getProphets = async () => {
   try {
-    const response = await  fetch("https://mormonbeliefs.org/temples-and-prophets/living-prophets/");
+    const response = await  fetch("https://history.churchofjesuschrist.org/collection/prophets?lang=eng");
     if (!response.ok) {
       throw new Error('Network response was not ok');
     }
