@@ -1,10 +1,9 @@
 /* W06: Programming Tasks */
 
 /* Declare and initialize global variables */
-
 /* async displayProphets Function */
-const templesElement = document.querySelector('#prophets');
-let templeList = [];
+const prophetsElement = document.querySelector('#prophets');
+let prophetList = [];
 
 
 /* async getProphets Function using fetch()*/
@@ -31,7 +30,7 @@ const displayProphets = (prophets) => {
 /* async getProphets Function using fetch()*/
 const getProphets = async () => {
   try {
-    const response = await  fetch("https://byui-cse.github.io/cse121b-ww-course/resources/prophets.json");
+    const response = await  fetch("https://mormonbeliefs.org/temples-and-prophets/living-prophets/");
     if (!response.ok) {
       throw new Error('Network response was not ok');
     }
